@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="=pt-br">
+	<head>
+		<title>Exercícios</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="widh=device-whidt, initial-scale=1">
+		<style type="text/css">
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</li>
+					<li><a href="#sobre">Sobre</li>
+					<li><a href="./06-formularios.html">Contato</li>
+				</ul>
+			</nav>
+			<article>
+				
+				<h1>Título Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit justo, et tempus eros cursus sit amet. Pellentesque nunc elit, dictum vel nisl ut, sollicitudin pellentesque odio. Suspendisse bibendum turpis metus, non elementum nisi maximus vel. Nullam accumsan consectetur sodales. Nulla lacinia diam a nisl dignissim lobortis. Sed quis magna id arcu iaculis aliquet non sit amet sem. Donec eget orci id mi aliquet maximus at ac metus.</p>
+
+				<p>Phasellus commodo velit dui, eget fermentum est maximus eu. Nam id sodales felis, rutrum suscipit quam. Vivamus bibendum dolor nec ligula porta accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ac dolor vel erat sagittis efficitur. Curabitur in lacus ipsum. Praesent condimentum rhoncus scelerisque. Quisque non odio eu ex condimentum pharetra. Morbi tempor ipsum gravida mattis interdum. Sed vehicula purus vel ipsum semper, sed consectetur nunc sagittis. Proin consequat erat et arcu placerat, eu varius erat efficitur. Fusce sed vulputate arcu. Sed id nunc suscipit, fringilla purus sed, fermentum tortor. Donec accumsan faucibus eros.</p>
+
+				<p>Mauris sit amet turpis tellus. Praesent sed faucibus orci. Morbi odio metus, eleifend sed lacus eget, lacinia facilisis odio. Vivamus volutpat blandit nulla, ac volutpat purus finibus bibendum. Donec ut interdum nisl. Suspendisse eleifend erat vel justo sollicitudin porttitor. Sed vel sapien sit amet metus pharetra vestibulum id a magna. In eleifend velit ut leo viverra, eu dapibus lectus porttitor. In et ante sapien. Integer interdum maximus auctor. Praesent facilisis laoreet elit non vulputate. In dictum feugiat dui id sollicitudin. Integer semper, arcu at ullamcorper tristique, purus justo pharetra tellus, sit amet condimentum purus dui non libero. Nunc vitae orci auctor, sagittis purus vitae, venenatis justo.</p>
+
+				<p>Sed tempus leo eget dapibus placerat. Vivamus interdum augue porta tellus scelerisque fringilla. Maecenas facilisis nunc arcu, et mattis erat tristique in. Etiam pretium vel velit eu accumsan. Ut blandit porta felis non lobortis. Nulla mollis mattis lectus quis placerat. Ut facilisis risus ut erat faucibus euismod. Suspendisse vehicula nulla tortor, lacinia auctor velit iaculis sit amet. Ut et felis erat. Nulla vehicula orci nec ex placerat porttitor. Quisque ac arcu vitae lectus malesuada ullamcorper sed at sapien. Duis ac tempus magna. Morbi dignissim enim eget nunc suscipit sodales. Cras at rutrum elit, sit amet placerat dui. Suspendisse ut metus lectus.</p>
+
+				<p>Mauris pulvinar arcu eget purus rhoncus tempus. Etiam in metus bibendum, aliquet lorem fringilla, dictum ipsum. Nam vitae velit ut elit consectetur sollicitudin. Proin suscipit nisl vel lorem lobortis condimentum. Mauris vitae maximus justo. Ut rhoncus iaculis leo vitae scelerisque. Etiam vitae hendrerit eros. Fusce bibendum felis ex, a luctus velit pulvinar sit amet.</p>
+
+			</article>
+
+		</section>
+		<footer>
+			Desenvolvido por Rerisson
+		</footer>
+
+	</body>
+</html>
