@@ -28,3 +28,15 @@ git checkout master (cria uma branch)
 
 ### Merge
 Mescla de branchs
+Você pode precisar resolver conflios manualmente
+
+git merge main
+
+### Pull Requests
+Mesclar de branchs no repositório
+Permite code review
+O respositório resolve os conflitos automaticamente
+
+### configura o GitFlow
+git flow init
+git flow feature start {nome-da-feature}
