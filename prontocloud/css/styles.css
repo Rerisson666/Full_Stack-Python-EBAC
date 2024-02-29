@@ -17,8 +17,9 @@ body {
     display: block;
     float: left;
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
     margin: o auto;
+    max-width: 1190px;
 }
 
 header {
@@ -59,6 +60,11 @@ p {
     margin-bottom: 10px;
     line-height: 1.4rem;
     color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 ol {
@@ -127,4 +133,25 @@ footer p{
 footer small {
     font-size: 80%;
     display: block;
+}
+
+.cognito {
+    height: 400px !important;
+    overflow: hidden !important;
+}
+
+#tenho-interesse {
+    background-color: #b8c8d6;
+    width: 100%;
+}
+
+#tenho-interesse form,
+.cognito.c-med .c-forms-form,
+.cognito.c-med .c-forms-form div{
+    background-color: #b8c8d6 !important;
+}
+
+#tenho-interesse .cognito .c-forms-form .c-forms-form-title h2,
+#tenho-interesse .cognito label[for], .cognito input[type=radio], .cognito input[type=checkbox] {
+    color: #385874;
 }
