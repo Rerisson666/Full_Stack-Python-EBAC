@@ -1,27 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript</title>
 </head>
 <body>
 
     <div class="container">
 
+        <div class="mensagem"></div>
+
         <form id="formulario-01">
-            <input type="text" placeholder="digite um numero" name="n1">
-            <input type="text" placeholder="digite um numero" name="n2">
-            <input type="text" placeholder="digite um numero" name="n3">
-            <input type="text" placeholder="digite um numero" name="n4">
+            <h2>Cáculo da Média</h2>
+            <P>Preencher as Notas de 0 a 10</P>
+            <input type="text" placeholder="digite um número" class="numero" name="n1">
+            <input type="text" placeholder="digite um número" class="numero" name="n2">
+            <input type="text" placeholder="digite um número" class="numero" name="n3">
+            <input type="text" placeholder="digite um número" class="numero" name="n4">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <form id="formulario-02">
+            <h2>Faça seu Cadastro</h2>
+            <input type="text" placeholder="digite seu nome" class="obrigatorio" name="nome">
+            <input type="text" placeholder="digite seu email" class="obrigatorio" name="email">
+            <input type="text" placeholder="digite seu telefone" class="" name="telefone">
             <button type="submit">Enviar</button>
         </form>
 
         <div id="resultado">
             
         </div>
-
-
     </div>
 
     <script type="text/javascript" src="./js/script.js"></script>

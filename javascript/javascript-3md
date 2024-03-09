@@ -78,3 +78,12 @@ element.innerHTML
 - window.onload
 - console.log()
 .window.scrollTo(x, y)
+
+## Seletores
+- Tipos de seletores: Tas, ID, Class, Name, Query
+- Calback
+- getElementById()
+- getElementsByTagName()
+- getElementsByName()
+- getElementsByClassName()
+- querySelectorAll() // #id | .class
