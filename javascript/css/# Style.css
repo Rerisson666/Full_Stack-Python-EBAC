@@ -3,18 +3,39 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+body {
+    background-color: #254259;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+container {
+    display: block;
+    float: left;
+    padding: 20px;
+    max-width: 100%;
+    margin: o auto;
+    max-width: 1190px;
+}
+
+header {
+    background: #ffff;
+    display: block;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #254259;
 }
 
 form {
     background: #ddd;
+    border: #2121be;
     padding: 20px;
     display: block;
     margin: 20px auto;
     width: 50%;
 }
+
 
 h2 {
     margin-bottom: 2rem;
