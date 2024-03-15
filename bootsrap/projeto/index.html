@@ -3,26 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style./custom.css">
+    
     <title>Document</title>
 </head>
 <body>
 
-    <div class="container container-fluid">
-        <div class="row">
-            <div class="col">    
-                <h1> Coluna 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi ipsam quis consectetur quae qui laudantium libero nesciunt ad, quasi architecto! Obcaecati ipsam sunt quod maxime aut? Sapiente, assumenda necessitatibus!</p>
-                <a class="btn btn-lg btn-primary">Botão</a>
-            </div>
-            <div class="col">    
-                <h2> Coluna 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi ipsam quis consectetur quae qui laudantium libero nesciunt ad, quasi architecto! Obcaecati ipsam sunt quod maxime aut? Sapiente, assumenda necessitatibus!</p>
-                <a class="btn btn-small btn-danger">Botão</a>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Logo</h1>                   
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produto">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contatos">Contato</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">    
+                    <h2> Sobre nós </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi ipsam quis consectetur quae qui laudantium libero nesciunt ad, quasi architecto! Obcaecati ipsam sunt quod maxime aut? Sapiente, assumenda necessitatibus!</p>
+                    <a class="btn btn-lg btn-success">Botão</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="./Images/teste_site.jpg" alt="Imagem Exemplo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <section id="produto">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Produtos</h2>
+
+                    <div class="card">
+                        <img src="./Images/teste_site.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-litle">Lorem ipsum dolor</h5>
+                            <p class="card-text">lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <a  class="btn btn-primary"href="#produto-1">ver produto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Images/teste_site.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-litle">Lorem ipsum dolor</h5>
+                            <p class="card-text">lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <a  class="btn btn-primary"href="#produto-2">ver produto</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Images/teste_site.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-litle">Lorem ipsum dolor</h5>
+                            <p class="card-text">lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <a  class="btn btn-primary"href="#produto-3">ver produto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contato">
+        <div class="container">
+      
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <P>Ficou interessado? Preencha os campos do formulário, para receber uma cotação</P>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" id="">
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="Digite seu email" id="">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control" name="" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-sucess">Solicitar Cotação</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
