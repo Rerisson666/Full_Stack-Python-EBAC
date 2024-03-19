@@ -5,66 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style./custom.css">
+    <link rel="stylesheet" href="./style./custom-form.css">
     <title>Cadastro</title>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Logo</h1>
-                </div>
-                <div class="col">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item"><a class="nav-link active" href="./Potifolio_Pessoal.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Potifolio_Pessoal.html">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./Potifolio_Pessoal.html">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#./Potifolio_Pessoal">Contato</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <section id="contato">
         <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <h2>Cadastro</h2>
-                        <p>Faça seu cadastro para receber nossos prodrutos em sua casa.</p>
-                    </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2>Cadastro</h2>
+                    <p>Faça seu cadastro para receber nossos prodrutos em sua casa.</p>
                 </div>
-            <form class="form">
-                <div class="form-row">
-                    <div class="col">
-                        <label for="nome">Nome Completo</label>
-                        <div class="input-group">
-                            <input class="form-control" type="text" id="nome" name="nome" placeholder="digite seu nome">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <label for="email">email</label>
-                        <div class="input-group">
-                            <input class="form-control" type="text" id="email" name="email" placeholder="digite seu email">
-                        </div>
-                    </div>
+            </div>
+            <form class="form">                    
+                <div class="form-row">              
+                    <div class="col">                                      
+                        <label for="nome" class="col-form-label col-form-label-sm">Nome Completo</label>               
+                        <div class="input-group">                   
+                            <input class="form-control" type="text" id="nome" name="nome" placeholder="digite seu nome">                   
+                        </div>                    
+                    </div>                    
+                    <div class="col">                                        
+                        <label for="email" class="col-form-label col-form-label-sm">email</label>                    
+                        <div class="input-group">           
+                            <input class="form-control" type="text" id="email" name="email" placeholder="digite seu email">                                      
+                        </div>                  
+                    </div>                    
                 </div>
-
+                
                 <div class="row">
                     <div class="col">
-                        <label for="endereço">Endereço Completo</label>
+                        <label for="endereço" class="col-form-label col-form-label-sm">Endereço Completo</label>
                         <input type="text" id="endereço" class="form-control" placeholder="Endereço completo">
                     </div>
                 </div>
-
+            
                 <div class="row">
                     <div class="col">
-                        <label for="cidade">Cidade</label>
+                        <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
                         <input type="text"name="cidade" id="cidade" class="form-control">
                     </div>
                     <div class="col">
-                        <label for="estado">Estado</label>
+                        <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
                         <select name="estado" id="estado" class="form-control">
                             <option value="">Selecione um estado</option>
                             <option value="sp">SP</option>
@@ -77,76 +60,61 @@
                         </select>
                     </div>
                     <div class="col">
-                        <label for="cep">CEP</label>
+                        <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
                         <input type="text" name="cep" id="cep" class="form-control">
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col">
                         <div class="input-group">
-                            <label for="info">Informação</label>
-                            <textarea class="form-control" name="informações" id="info" rows="5"></textarea>
+                            <label for="info" class="form-check-label col-form-label-sm" >Informações</label>
+                            <textarea class="form-control" name="informacoes"  id="info" rows="5"></textarea>
                         </div>
                     </div>
                 </div>
-                
                 <div class="row">
                     <div class="col">          
                         <div class="form-check">
-                            <input type="checkbox" name="promocionais" id="">
-                            <label for="promocionais" class="form-check" >Aceito receber mensagens promocionais</label>
+                            <input type="checkbox" name="promocionais" id="promocionais">
+                            <label for="promocionais" class="form-check-label col-form-label-sm" >Aceito receber mensagens promocionais</label>
                         </div>
                     </div>
                 </div>
-
-                <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
-            </form>
+            
+                <button type="submit" class="btn btn-lg btn-success">realizar cadastro</button>
+            </form>           
+            <p><a href="#cadastro" data-bs-toggle="modal1" data-bs-target="#modal-1">Cadastre-se</a> para receber novidades.</p>
         </div>
-
     </section>
-
-
-
     <div class="modal fade" id="modal-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Produto 1</h5>
+                    <h5 class="modal-title">Inscrever-me na lista</h5>
                     <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
-                    <table class="table table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>Tamanho</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>P</td>
-                                <td>R$ 100</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>R$ 200</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>R$ 300</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h6>Preencha os Campos para receber novidades e promoções</h6>
 
+                    <form class="form-inline">
+                        <div class="row">
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" name="nome" placeholder="nome">
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" name="e-mail" placeholder="e-mail" required>
+                            </div>
+                            <div class="form-group col-4"></div>
+                                <button type="submit" class="btn btn-sm btn-success">receber novidades</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary mb-2" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
