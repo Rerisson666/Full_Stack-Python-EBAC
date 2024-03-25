@@ -79,3 +79,9 @@ Override de estilos (sobreposição)
  .botao.visited { ... }
 
  </style>
+
+ ## Helpers
+
+ - Funções básicas
+ - Incrementos
+ - Ajustes
