@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/fontawesome-free-6.5.1-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="./style./custom.css">
     
     <title>Document</title>
@@ -109,11 +110,31 @@
             <a name="" id="" class="btn btn-light float-end" href="#" role="button">Botão</a>
             <a name="" id="" class="btn btn-light float-end" href="#" role="button">Botão</a>
         </div>
+
+        <i class="fa fa-wifi" aria-hidden="true"></i>
+        <i class="fa fa-facebook-official link-primary" aria-hidden="true"></i>
+        <i class="fa fa-car fa-2x" aria-hidden="true"></i>
+        
+        <div class="list-group">
+            <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+            <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+            <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+            <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
+          </div>
+
+        <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+            <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+            <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+            <li><i class="fa-li fa fa-square"></i>in lists</li>
+          </ul>
+
     </div>
 
     <a name="" id="" class="btn btn-link float-start fixed-top" href="#" role="button">Link</a>    
     
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/ccbff27538.js" crossorigin="anonymous"></script>
     <script>
         const myCarouselElement = document.querySelector('#carouselExampleFade')
         const carousel = new bootstrap.Carousel(myCarouselElement, {
